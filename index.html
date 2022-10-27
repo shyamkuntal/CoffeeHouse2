@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="js/scripts.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Coffee House</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1><em>Shyam Coffee House</em></h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">
+
+                <form id="formid">
+                    <div class="form-group">
+                        <label for="name"> User Name :</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="noToppings">Qnantity </label>
+                        <select id="noToppings" class="form-control">
+                  <option selected>Choose the Quantity of coffee</option>
+                  <option value= "1">1</option>
+                  <option value= "2">2</option>
+                  <option value = "3">3</option>
+                  <option value= "4">4</option>
+                </select>
+                    </div>
+
+
+                    <div class="form-check">
+                        <label for="chooseToppings"><strong><em>Choose your Adds Ons : All of 60 rupees</em></strong></label><br>
+
+                        <input class="form-check-input" type="checkbox" value="Cheese" name="toppingCheck">
+                        <label class="form-check-label" for="cheese">
+                  Milk
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Pepperoni" name="toppingCheck">
+                        <label class="form-check-label" for="pepperoni">
+                  Cream
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Olives" name="toppingCheck">
+                        <label class="form-check-label" for="Olives">
+                  Latte
+                </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label for="chooseToppings"><strong><em>Choose your coffee</em></strong></label><br>
+                        <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="exp">
+                        <label class="form-check-label" for="sizeSmall">
+                  Expresso (100)
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sizePizza" id="option2" value="cap">
+                        <label class="form-check-label" for="sizeMedium">
+                  Cappuccino (120)
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sizePizza" id="option3" value="Lat">
+                        <label class="form-check-label" for="sizeLarge">
+                  Latte (100)
+                </label>
+                    </div><br><button type="submit" class="btn-primary" id="btn-submit">Checkout</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div id="show-Bill">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <p><strong>You final bill is...</strong></p>
+                            <p>Name: <span id="displayName"></span></p>
+
+                            <p>Coffe type <span id="displaySize"></span></p>
+                            <p>Total cost: <span id="displayTotalCost"></span></p>
+                        </div>
+                        <div class="panel-footer">Thank You for visiting Shyam Kuntal Coffee House. !!!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

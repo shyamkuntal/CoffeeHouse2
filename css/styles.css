@@ -1,0 +1,16 @@
+img{
+  width: 3000px;
+  height: 280px;
+  float:left;
+}
+h1{
+  /* position:absolute;
+  top: 120px;
+  left:45px;
+  width:150px; */
+  font-weight: bolder;
+}
+
+#show-Bill{
+  display :none;
+}
